@@ -271,7 +271,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da5ecdd61149844abaae2aa3f0e20f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyBindText: {fileID: 9198119196610751344}
+  interactionText: {fileID: 9198119196610751344}
+  interactKeyBindText: {fileID: 5713103289346852269}
+  interactAltKeyBindText: {fileID: 0}
   counter: {fileID: 2067551920297675391}
 --- !u!1 &4035757044413389793
 GameObject:

@@ -20,7 +20,7 @@ public class PauseMenuUI : MonoBehaviour
         KitchenGameManager.Instance.OnGameStateChanged += OnGameStateChanged;
         resumeButton.onClick.AddListener(() =>
         {
-            KitchenGameManager.Instance.State = KitchenGameManager.GameState.Playing;
+            KitchenGameManager.Instance.State = KitchenGameManager.Instance.prevStateBeforePause;
             Time.timeScale = 1f;
         });
         mainMenuButton.onClick.AddListener(() => { SceneLoader.LoadScene(SceneLoader.Scene.MainMenuScene); });

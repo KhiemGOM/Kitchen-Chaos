@@ -312,7 +312,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         public PlayerActions(@PlayerInputAction wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
-        public InputAction @InterfactAlt => m_Wrapper.m_Player_InterfactAlt;
+        public InputAction InteractAlt => m_Wrapper.m_Player_InterfactAlt;
         public InputAction @Pause => m_Wrapper.m_Player_Pause;
         public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
@@ -330,9 +330,9 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
-            @InterfactAlt.started += instance.OnInterfactAlt;
-            @InterfactAlt.performed += instance.OnInterfactAlt;
-            @InterfactAlt.canceled += instance.OnInterfactAlt;
+            InteractAlt.started += instance.OnInterfactAlt;
+            InteractAlt.performed += instance.OnInterfactAlt;
+            InteractAlt.canceled += instance.OnInterfactAlt;
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
@@ -349,9 +349,9 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
-            @InterfactAlt.started -= instance.OnInterfactAlt;
-            @InterfactAlt.performed -= instance.OnInterfactAlt;
-            @InterfactAlt.canceled -= instance.OnInterfactAlt;
+            InteractAlt.started -= instance.OnInterfactAlt;
+            InteractAlt.performed -= instance.OnInterfactAlt;
+            InteractAlt.canceled -= instance.OnInterfactAlt;
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;

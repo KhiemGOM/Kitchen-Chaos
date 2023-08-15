@@ -31,7 +31,7 @@ public class KitchenGameManager : MonoBehaviour
     public event EventHandler<GameStateChangeEventArgs> OnGameStateChanged;
     [SerializeField] private float maxPlayingTime = 60f;
     private GameState state;
-    private GameState prevStateBeforePause;
+    public GameState prevStateBeforePause;
     private float countdownTimer = 3f;
     private float playingTimer;
     private bool firstUpdateClock = true;

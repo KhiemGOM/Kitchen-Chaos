@@ -388,7 +388,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da5ecdd61149844abaae2aa3f0e20f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyBindText: {fileID: 8555358542162947848}
+  interactionText: {fileID: 8555358542162947848}
+  interactKeyBindText: {fileID: 1105955276122493359}
+  interactAltKeyBindText: {fileID: 0}
   counter: {fileID: -4509697362921375906}
 --- !u!1 &4782731449185419694
 GameObject:

@@ -44,7 +44,7 @@ public class ClearCounter : BaseCounter
     public override string GetInteractionName()
     {
         if (KitchenObject == null && Player.Instance.KitchenObject != null)
-        {
+        {  
             return "Put down";
         }
         if (KitchenObject != null && Player.Instance.KitchenObject != null)
